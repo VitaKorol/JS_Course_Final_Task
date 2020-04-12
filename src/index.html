@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <head>
+    <title>HTML + JS boilerplate project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  </head>
+  <body>
+    <div id="main">
+      <div id="page-header">
+        <div id="title">ToDo List</div>
+        <div id="searchField">
+          <input type="text" id="searchText" value="Search...">
+        </div>
+      </div>
+      <div id="newTaskBlock">
+        <input id="newTask" type="text" value="New task...">
+        <button id="addTaskButton">Add</button>
+      </div>
+
+     
+        <div class="listHeader">
+          <div>Open</div>
+          <div><select id="sortToDo">
+            <option>Records (asc)</option>
+            <option>Records (desc)</option>
+            <option>Creation date(asc)</option>
+            <option selected="selected">Creation date(desc)</option>
+          </select></div>
+        </div>
+        <div id="toDoList"></div>
+        <p class = "clearList open"><a href="#">Clear "Open" list</a></p>
+
+        <div class="listHeader">
+        <div>Done</div>
+        <div><select id="sortDone">
+          <option>Records (asc)</option>
+          <option>Records (desc)</option>
+          <option>Due date(asc)</option>
+          <option  selected="selected">Due date(desc)</option>
+        </select></div>
+      </div>
+      <div id="doneList"></div>
+      <p class = "clearList done"><a href="#">Clear "Done" list</a></p>
+    </div>
+  </body>
+</html>
